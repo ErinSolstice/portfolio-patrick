@@ -24,7 +24,12 @@ enableEmoji: true
 # Site parameters
 params:
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  gitRepo: https://github.com/ErinSolstice/portfolio-patrick
+
+  darkMode:
+    enable: true
+    provider: darkreader
+    default: system
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: true
@@ -35,4 +40,4 @@ params:
   # Provide newsletter configuration. This feature hasn't been implemented yet.
   # Currently, you can just hide it from the footer.
   newsletter:
-    enable: true
+    enable: false
