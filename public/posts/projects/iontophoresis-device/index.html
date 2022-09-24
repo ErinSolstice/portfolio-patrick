@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Designing an Iontophoresis Device</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="/google-fonts/Mulish/mulish.css"/>
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+<meta property="og:title" content="Designing an Iontophoresis Device" />
+<meta property="og:description" content="Investigating the current during an iontophoresis session when using a constant voltage source." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://patrick-herke.com/posts/projects/iontophoresis-device/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-08-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-08-01T00:00:00+00:00" />
+
+
+
+    
+    
+<meta name="description" content="Investigating the current during an iontophoresis session when using a constant voltage source." />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      Patrick&#39;s Blog</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/projects/">Projects</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/projects/anasazi-flute-elderberry/" title="Anasazi Style Rim-blown Flute">Anasazi Style Rim-blown Flute</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/projects/blender-teardown/" title="Blender Teardown SolidWorks Drawings">Blender Teardown SolidWorks Drawings</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/projects/cervical-collar/" title="Cervical Collars">Cervical Collars</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/posts/projects/iontophoresis-device/" title="Designing an Iontophoresis Device">Designing an Iontophoresis Device</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/projects/filter-press/" title="Filter Press Troubleshooting">Filter Press Troubleshooting</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(/posts/projects/iontophoresis-device/images/full-setup.jpg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/bio-photo_snow_hub093b72d847f6c47acf4a2e54a947677_198460_120x120_fit_q75_box.jpg' alt="Author Image">
+          <h5 class="author-name">Patrick Herke</h5>
+          <p>Saturday, August 1, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>Designing an Iontophoresis Device</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <p>One of the accepted treatments for hyperhidrosis (excessive sweating) is iontophoresis. Iontophoresis involves running a small current through the hands, feet, or armpits of the patient. Some people set the current whereas others set the voltage for a session. I wanted to see if these control methods were equivalent. Safety concerns around the body and electricity are obviously very important and complicated. RA Fischer, a manufacturer of an FDA approved device, has max settings of 30mA and 58V. To be on the safe side, I chose to use only 9V in my tests.</p>
+<figure><img src="images/start-screen.jpg"/><figcaption>
+            <h4>Start up screen.</h4>
+        </figcaption>
+</figure>
+
+<figure><img src="images/session-screen.jpg"/><figcaption>
+            <h4>Session screen.</h4>
+        </figcaption>
+</figure>
+
+<p>I used a raspberry pi, a bundled voltage/current sensor, and a 9V battery. I added a 16x2 LCD display that shows relevant session information and allows adjustment of starting values by pushbutton. As a learning exercise, I used C to write most of the code. However, to interface with the current/voltage sensor I embedded python code in the C code.</p>
+<p>To test the device, I placed my hands in the two plastic containers with aluminum foil electrodes covered by paper towels and just enough tap water to cover my palms. (I also added a ¼ teaspoon each of salt and backing soda as our water has a low mineral content.)</p>
+<figure><img src="images/breadboard-potentiometer.jpg"/><figcaption>
+            <h4>Breadboard with potentiometers.</h4>
+        </figcaption>
+</figure>
+
+<figure><img src="images/breadboard.jpg"/><figcaption>
+            <h4>Breadboard with screen and buttons.</h4>
+        </figcaption>
+</figure>
+
+<figure><img src="images/full-setup.jpg"/><figcaption>
+            <h4>Setup of the testing circuit and iontophoresis device.  Shows two 9V batteries, however, in the end only one was used.</h4>
+        </figcaption>
+</figure>
+
+<p>Despite having a fairly constant voltage at about 8.5V, the current present in the circuit varied from 2mA-4.5mA through the 10-minute session. Clearly a constant voltage does not equate to a constant current.  What remains unclear is whether controlling the voltage, the current, or some other parameter such as total charge (i.e. current×time) works best.</p>
+<figure><img src="images/voltage.png"/><figcaption>
+            <h4>Graph of the voltage during the session.</h4>
+        </figcaption>
+</figure>
+
+<figure><img src="images/current.png"/><figcaption>
+            <h4>Graph of the current during the session.</h4>
+        </figcaption>
+</figure>
+
+<figure><img src="images/resistance.png"/><figcaption>
+            <h4>Graph of the resistance during the session.</h4>
+        </figcaption>
+</figure>
+
+<figure><img src="images/power.png"/><figcaption>
+            <h4>Graph of the power during the session.</h4>
+        </figcaption>
+</figure>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/5xvp_0NI6Zk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+          
+            
+          
+          <div class="col-md-6 btn-improve-page">
+             
+               <a href="https://github.com/hugo-toha/hugo-toha.github.io/edit/main/content/posts%5cprojects%5ciontophoresis-device%5cindex.md" title="Improve this page" target="_blank" rel="noopener">
+            
+                <i class="fas fa-code-branch"></i>
+                Improve this page
+              </a>
+          </div>
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/projects/cervical-collar/" title="Cervical Collars" class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> Prev</div>
+        <div class="next-prev-text">Cervical Collars</div>
+      </a>
+    </div>
+  
+  
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/projects/filter-press/" title="Filter Press Troubleshooting" class="btn btn-outline-info">
+          <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Filter Press Troubleshooting</div>
+        </a>
+      </div>
+    
+</div>
+
+      <hr />
+
+      
+      
+
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents"></nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://patrick-herke.com#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://patrick-herke.com#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://patrick-herke.com#experiences">Experiences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://patrick-herke.com#education">Education</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://patrick-herke.com#projects">Projects</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://patrick-herke.com#publications">Publications</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://patrick-herke.com#recent-posts">Recent Posts</a>
+                </li>
+              
+              
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:pherke1@lsu.edu target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>pherke1@lsu.edu</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/ErinSolstice target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>ErinSolstice</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/PatrickHerke target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Patrick Herke</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>Stay up to date with email notification</p>
+            
+              <form method='post' action='https://blogtrottr.com'>
+              <div class="form-group">
+              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
+              <input type='hidden' name='btr_url' value='https://patrick-herke.comindex.xml' />
+              <input type='hidden' name='schedule_type' value='1' />
+              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
+              <button type="submit" class="btn btn-info"> Submit </button>
+              </div>
+              </form>
+            
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

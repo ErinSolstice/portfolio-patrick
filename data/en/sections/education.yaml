@@ -1,0 +1,73 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+- name: B.Sc. in Mechanical Engineering
+  icon: fa-graduation-cap
+  timeframe: 2019-2024
+  institution:
+    name: Louisiana State University (LSU)
+    url: "https://www.lsu.edu/eng/mie/"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 3.91
+    outOf: 4.3
+  takenCourses: #(optional)
+    # if true, the courses will be rendered as a table otherwise it will render as a list and the grades will be hidden.
+    showGrades: true
+    collapseAfter: 3
+    courses:
+    - name: Intro to Robotics Lab
+      achieved: 4.3
+      outOf: 4.3
+    - name: Intro to Computer Vision
+      achieved: '4.0'
+      outOf: 4.3
+    - name: System Dynamics and Modeling
+      achieved: 3.7
+      outOf: 4.3
+    - name: Fluids
+      achieved: 3.7
+      outOf: 4.3
+    - name: Machine Design I
+      achieved: 4.3
+      outOf: 4.3
+    - name: Machine Design II
+      achieved: 3.3
+      outOf: 4.3
+    - name: Intro to Mechanical Engineering Design
+      achieved: '4.0'
+      outOf: 4.3
+  publications: #(optional)
+  - title: Using Granular Jamming and a Parallel Compliant Mechanism to Provide a Rapidly Deployable, Custom-Fitted Cervical Collar
+    url: "#"
+  extracurricularActivities: #(optional)
+  - 'Maker Club (Founding Officer): Planned and lead workshops on Solidworks, 3D printing, and other topics.'
+  - 'Ballroom Club (Treasurer): Handled club funds. Provided 1-on-1 help to newer members during group lessons.'
+  - 'Trip Leader: Planned transport, food, and itinerary for multi-day camping & backpacking trips. (Smokies & GC)'
+  - 'Viola: Played in the LSU Orchestra for one semester. Six hours of rehearsal and several hours of pratice per week.'
+- name: High School Diploma
+  icon: fa-school
+  timeframe: 2015-2019
+  institution:
+    name: Baton Rouge Magnet High School
+    url: "https://brmhs.com/"
+  grade: #(optional)
+    scale: CGPA
+    achieved: 4.61
+    outOf: '4.61 (Classes: Standard 4.0, Honors 5.0)'
+  publications:
+    - title: Infrared Laser Ablation Sample Transfer of Tissue DNA for Genomic Analysis.
+      url: "https://doi.org/10.1007/s00216-017-0373-z"
+  extracurricularActivities: #(optional)
+  - 'Viola: Started at 9 years old. Proudest moment was achieving second chair in the All State Orchestra in 11th grade.'
+  - 'Ballroom Club (Treasurer): Everything from waltz to cha-cha to polka.'
+  - 'Science Olympiad: Made it to Nationals in 12th grade.'
