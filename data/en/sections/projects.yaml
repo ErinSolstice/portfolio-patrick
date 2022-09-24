@@ -25,7 +25,7 @@ projects:
   # logo: /images/sections/projects/
   role: Owner
   timeline: "May 2018 - Oct 2018 & Aug 2022"
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  url: "/posts/projects/anasazi-flute-elderberry/"
   summary: Made an Anasazi style rim blown flute from elderberry; designed & 3D printed a modular flute with snap joints. Taught myself to play the flute; composed a melody to play on it in collaboration with a music major friend
   tags: ["hobby"]
 
@@ -33,7 +33,7 @@ projects:
   # logo: /images/sections/projects/
   role:
   timeline: "May 2021 - Aug 2021"
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  url: "/posts/projects/filter-press/"
   summary: Identified material incompatibility between filter press plates and process slurry ($27,000 annual savings).
   tags: ["professional"]
 
@@ -41,8 +41,7 @@ projects:
   # logo: /images/sections/projects/
   role: Owner
   timeline: "May 2020 - Aug 2020"
-  #repo: # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  url: "//www.patrick-herke.com/posts/projects/iontophoresis-device/"
   summary: Investigate the current seen throughout an iontophoresis session when using a constant voltage source with a homemade machine.
   tags: ["hobby"]
 
@@ -50,8 +49,7 @@ projects:
   # logo: /images/sections/projects/
   role: Team Member
   timeline: "Feb 2020 - Mar 2020"
-  #repo: # If your project is a public repo on GitHub, then provide this link. it will show star count.
-  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  url: "https://www.patrick-herke.com/posts/projects/blender-teardown/"
   summary: As part of Sophomore Design we did a teardown of a blender and then modeled some of its parts in Solidworks.
   tags: ["academic"]
 
@@ -59,7 +57,7 @@ projects:
   # logo: /images/sections/projects/
   role: Team Lead
   timeline: "Sep 2021 - Dec 2021"
-  repo: https://github.com/ErinSolstice/robotics-lab-project
+  repo: "https://github.com/ErinSolstice/robotics-lab-project"
   summary: Used the Robot Operating System (ROS) to enable communication between the system components. Implemented object detection via AprilTags; search behavior to find new target; and sounds for start/stop.
   tags: ["academic"]
 
