@@ -41,7 +41,7 @@ projects:
   # logo: /images/sections/projects/
   role: Owner
   timeline: "May 2020 - Aug 2020"
-  url: "//www.patrick-herke.com/posts/projects/iontophoresis-device/"
+  url: "/posts/projects/iontophoresis-device/"
   summary: Investigate the current seen throughout an iontophoresis session when using a constant voltage source with a homemade machine.
   tags: ["hobby"]
 
@@ -49,7 +49,7 @@ projects:
   # logo: /images/sections/projects/
   role: Team Member
   timeline: "Feb 2020 - Mar 2020"
-  url: "https://www.patrick-herke.com/posts/projects/blender-teardown/"
+  url: "/posts/projects/blender-teardown/"
   summary: As part of Sophomore Design we did a teardown of a blender and then modeled some of its parts in Solidworks.
   tags: ["academic"]
 
