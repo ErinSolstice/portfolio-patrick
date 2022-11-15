@@ -1,0 +1,86 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: SolidWorks
+  logo: /images/sections/skills/solidworks.png
+  summary: "Over 7 years of modeling experience in SolidWorks. Used both to model wood construciton and to design prototypes for 3D printing."
+  url: "https://www.solidworks.com/"
+
+- name: 3D Printing - FDM
+  logo: /images/sections/skills/filament.png
+  summary: "Extensive prototyping experience using PLA, PETG, and Nylon." 
+  url: "https://www.printables.com/social/345815-luja/models"
+
+- name: Manufacturing Processes
+  logo: /images/sections/skills/lathe.png
+  summary: "Some experience with MIG welding, turning, and milling." 
+  url: ""
+
+- name: Python
+  logo: /images/sections/skills/python.png
+  summary: "Used to do everything from develop discord bots to automate spotify playlist creation from reddit comment threads to train handwriting recognition models." 
+  url: "https://www.python.org/"
+
+- name: Raspberry Pi
+  logo: /images/sections/skills/raspberry-pi.png
+  summary: "Handled, recorded, and dispalyed data from multiple sensors." 
+  url: "https://www.raspberrypi.org/"
+
+- name: Arduino
+  logo: /images/sections/skills/arduino.png
+  summary: "Experience using the arduino platform for basics robotics and controls applications." 
+  url: "https://www.arduino.cc/"
+
+- name: Robotic Operating System
+  logo: /images/sections/skills/ros.svg
+  summary: "Basic level of ROS experience. Was able to adapt existing Turtlebot code to follow AprilTags." 
+  url: "https://www.ros.org/"
+
+- name: C++
+  logo: /images/sections/skills/c++.png
+  summary: "Know basic C/C++ programming. Used for robotics and microcontroller projects."
+  url: "https://isocpp.org/"
+
+- name: Matlab
+  logo: /images/sections/skills/matlab.png
+  summary: "Created numerical models for kinematic linkages, truss bridges, and more." 
+  url: "https://www.mathworks.com/products/matlab.html"
+
+- name: R
+  logo: /images/sections/skills/r.png
+  summary: "Used R, mostly through RStudio, to perform statistical analysis for lab reports." 
+  url: "https://www.r-project.org/"
+
+- name: Alteryx
+  logo: /images/sections/skills/alteryx.svg
+  summary: "Experience preparing large datasets for visualization in Tableau."
+  url: "https://golang.org/"
+
+- name: Tableau
+  logo: /images/sections/skills/tableau.png
+  summary: "Experience creating dashboards to explore and visualize large datasets."
+  url: "https://www.tableau.com/"
+
+- name: LaTeX with Overleaf
+  logo: /images/sections/skills/overleaf.svg
+  summary: "Familiar with using LaTeX and Overleaf to write and collaborate on academic papers and lab reports." 
+  url: ""
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Used Github for managing personal and group class projects."
+  url: "https://git-scm.com/"
+
+- name: Spanish
+  logo: /images/sections/skills/spanish.png
+  summary: "Fluent in Spanish. Went to a Spanish immersion school for K-8th and am currently working on a minor." 

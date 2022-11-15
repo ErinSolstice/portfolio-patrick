@@ -1,0 +1,62 @@
+# section information
+section:
+  name: Publications
+  id: publications
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: "Granular Jamming"
+  filter: "granular-jamming"
+- name: "3D Printing"
+  filter: "3d-printing"
+- name: "Genomics"
+  filter: "genomics"
+
+# your publications
+publications:
+- title: Using Granular Jamming and a Parallel Compliant Mechanism to Provide a Rapidly Deployable, Custom-Fitted Cervical Collar
+  publishedIn:
+    name: ASME IMECE 2022 Conference
+    date: Oct 30-Nov 3, 2022
+    url: https://example.com
+  authors:
+  - name: Patrick Herke
+    url: "#"
+  - name: Abhishek Kumar
+    url: "https://www.totalorthosportsmed.com/orthoteam/abhishek-kumar-md-frcsc/"
+  - name: Hunter Gilbert
+    url: "https://www.lsu.edu/eng/mie/people/researchfaculty/gilbert.php"
+  paper:
+    summary: Cervical collars are medical devices commonly used to restrict motion of the cervical spine after trauma or surgical intervention. The adjustability of most collars is limited, and this leads commonly to the use of foams and other forms of mechanical compliance to take up the geometric misfit between the initial collar design and each patient’s anatomy. Improvements to the kinematic adjustability of collars and the rigidity of the contact surface between the patient's body and the collar would result in better restriction of motion while maintaining comfort and fit. This paper reports on the initial design and prototyping of a new design concept for cervical collars consisting of pouches of granular material along the inside of two rings which are of similar geometry to the neck. 
+    url: https://example.com
+  categories: ["granular-jamming","3d-printing"]
+  tags: ["Cervical Collar", "Granular Jamming", "3D Prinitng"]
+
+- title: Infrared Laser Ablation Sample Transfer of Tissue DNA for Genomic Analysis.
+  publishedIn:
+    name: Analytical and Bioanalytical Chemistry
+    date: 17 May 2017
+    url: https://link.springer.com/journal/216/volumes-and-issues/409-17
+  authors:
+  - name: Kelin Wang
+    url: https://example.com
+  - name: Fabrizio Donnarumma
+    url: https://example.com
+  - name: Scott W. Herke
+    url: https://example.com
+  - name: Patrick F. Herke
+    url: "#"
+  - name: Kermit K. Murray
+    url: https://example.com
+  paper:
+    summary: Infrared (IR) laser ablation was used to remove material from tissue sections mounted on microscope slides, with subsequent capture in a solvent-containing microcentrifuge tube. Experiments conducted with a 3200-bp double-stranded plasmid DNA template demonstrated IR-laser ablation transfer of intact DNA. The transfer efficiency and the molecular integrity of the captured DNA were evaluated using Sanger sequencing, gel electrophoresis, and fluorimetric analysis. This work expands the sampling capabilities of IR laser ablation, demonstrating that DNA can be isolated from tissue samples for genomic assays. Due to the small size of the ablation regions (1 mm2), this technique will be useful for sampling discrete cell populations from tissue sections.
+    url: https://doi.org/10.1007/s00216-017-0373-z
+  categories: ["genomics"]
+  tags: ["Genomics", "DNA Sequencing"]
