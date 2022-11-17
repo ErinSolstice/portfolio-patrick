@@ -3,7 +3,7 @@ name: "Patrick Herke"
 nickname: "Patrick"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
-image: "images/author/bio-photo_snow.jpg"
+image: "images/author/bio-photo-professional.jpg"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "pherke1@lsu.edu"
