@@ -1,12 +1,12 @@
 # section information
 section:
-  name: Experiences
+  name: Experiencias
   id: experiences
   enable: true
   weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true 
+  # hideTitle: true
 
 # Your experiences
 experiences:
@@ -15,42 +15,42 @@ experiences:
     url: "https://www.tranetechnologies.com/"
     location: Tyler, TX
     # company overview
-    overview: Trane Technologies designs and manufactures HVAC systems.
+    overview: Trane Technologies diseña y fabrica sistemas de HVAC.
   positions:
-  - designation: Systems Engineering Co-op
-    start: Jun 2022
+  - designation: Pasante de Ingeniería de Sistemas
+    start: 2022 junio
     # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
+    end: 2022 deciembre
     # give some points about what was your responsibilities at the company.
     responsibilities:
-    - Using historical furnace usage data to better understand locations suitable for heat pumps.
-    - Wrote an article on methods for recycling 3D printer filament for the Sustainability Team newsletter.
-    - Qualified a new material for furnace latches to relieve supply chain issues.
+    - Utilicé datos históricos de uso de calderas para comprender mejor las ubicaciones adecuadas para las bombas de calor.
+    - Escribí un articulo sobre el reciclaje de plástico en general y de plástico producido por las impresoras 3D.
+    - Califiqué un nuevo material para pestillos de calderas para aliviar los problemas de la cadena de suministro.
 
 - company:
     name: W.R. Grace & Co.
     url: "https://grace.com/"
     location: Baton Rouge, LA
-    overview: W.R. Grace is a chemical manufacturing company and the Baton Rouge plant focuses on catalysts for plastics production.
+    overview: W.R. Grace es una empresa de fabricación química. El planta en Baton Rouge fabrica catalizadores para producción de plásticos.
   positions:
-  - designation: Mechanical Engineering Intern, Maintenance Department
-    start: May 2021
-    end: Aug 2021
+  - designation: Pasante de Ingeniería Mecánica, Departamento de Mantenimiento
+    start: 2021 mayo
+    end: 2021 agosto
     responsibilities:
-    - Identified material incompatibility between filter press plates and process slurry ($27,000 annual savings).
-    - Converted ~8,000 documents from pdf to Word to allow updates, extracting data using OCR, RegEx, and Adobe.
-    - Provided missing code calculations by modeling 3 existing pressure vessels in the software package Compress.
+    - Identifiqué una incompatabilidad de material entra las placas del filtro prensa y la solucion que se filtra ($27,000 de ahorro anual).
+    - Convertí ~8,000 documentos de pdf a Word para permitir actualizaciones. Extraje los datos usando OCR, RegEx, y Adobe.
+    - Proporcioné cálculos de código faltantes modelando 3 recipientes a presión en el paquete de software Compress.
 
 - company:
     name: President's Future Leaders in Research (LSU)
     url: "https://www.lsu.edu/discover/funding/presidents_future_leaders_in_research.php"
     location: Baton Rouge, LA
-    overview: PFLR is a program that provides undergraduate students funding to pursue research with a professor.:w
+    overview: PFLR es una programa que provee financiamiento a estudiantes de licenciatura para hacer investigación con un profesor.
   positions:
-  - designation: Research Assistant - iCORE Lab
-    start: Sep 2019
+  - designation: Ayudante de Investigación - iCORE Lab
+    start: 2019 septiembre
     # end: Jan 2016
     responsibilities:
-    - Developing a cervical collar using granular jamming for improved restriction of motion, fit, & patient comfort.
-    - Using SolidWorks and additive manufacturing for the design and manufacture of prototype cervical collars.
-    - Presenting conference paper on prototype collar as the lead author at IMECE 2022 run by ASME.
+    - Desarollando un collarín cervical usando atasco granular para mejorar la restriccíon del movimiento, el ajuste y la comodidad del paciente.
+    - Usando SolidWorks y fabricación aditiva para el diseño y fabricación de los collarínes prototipos.
+    - Presenté un papel de conferencía sobre el collarín prototipo como el autor primero en IMECE 2022 dirigido por ASME.

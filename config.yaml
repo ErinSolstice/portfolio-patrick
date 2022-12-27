@@ -11,7 +11,7 @@ languages:
     languageName: English
     weight: 1
   es:
-    languageName: Spanish
+    languageName: Español
     weight: 2
 
 # Control TOC depth

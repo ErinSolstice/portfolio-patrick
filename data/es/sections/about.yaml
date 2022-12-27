@@ -1,6 +1,6 @@
 # section information
 section:
-  name: About
+  name: Sobre
   id: about
   enable: true
   weight: 1
@@ -8,11 +8,11 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Systems Engineering Co-op
+designation: Estudiante de Ingeniería Mecánica
 # your company information
 company:
-  name: Trane Technologies
-  url: "https://www.tranetechnologies.com/"
+  name: LSU
+  url: "https://www.lsu.edu/eng/mie/"
 
 # a summary about you
 summary: "I am a senior mechanical engineering student who is currently taking a semester off to gain experience by working a co-op. As an undergrad, I've done research on creating a better cervical collar using granular jamming and 3D printing. I also enjoy working on various personal projects ranging from creating replicas of ancient Anasazi rim-blown flutes to building a yogurt maker."
