@@ -15,8 +15,14 @@ categories: ["academic"]
 
 As part of a class project for Sophomore Design, my team did a teardown of a blender. For our report, we created Solidworks models of the most interesting components. Presented here are two of the drawings that I did for the brush assembly of the DC motor of the blender.
 
-{{< figure src="images/ba-spring-housing.png" title="Spring housing." >}}
+{{< figure-custom class="grid one" figcaption="Spring housing." >}}
+  {{< img src="images/ba-spring-housing.png" alt="Spring housing." grid-width="1" >}}
+{{< /figure-custom >}}
 
-{{< figure src="images/ba-spring-plate.png" title="Spring plate." >}}
+{{< figure-custom class="grid one" figcaption="Spring plate." >}}
+  {{< img src="images/ba-spring-plate.png" alt="Spring plate." grid-width="1" >}}
+{{< /figure-custom >}}
 
-{{< figure src="images/brush-assembly.png" title="Brush assembly." >}}
+{{< figure-custom class="grid one" figcaption="Brush assembly." >}}
+  {{< img src="images/brush-assembly.png" alt="Brush assembly." grid-width="1" >}}
+{{< /figure-custom >}}

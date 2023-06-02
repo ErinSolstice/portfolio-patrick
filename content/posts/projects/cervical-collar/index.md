@@ -15,6 +15,11 @@ categories: ["academic"]
 
 Cervical collars are neck braces used for suspected spinal trauma and for post-surgical stabilization of the spine. Current cervical collars allow too much freedom of movement and have limited options for an individualized fit. I am using granular jamming and 3-D printing to resolve those problems. Granular jamming occurs when granular media, like coffee grounds, are placed under vacuum and become hard and rigid; by contrast, when not under vacuum, the bladder can be molded to the patient’s neck.
 
+{{< figure-custom class="grid two" figcaption="(left) Nitrile rubber pouch filled with coffee grounds; attached syringe is used to pull a vacuum. (right) 3D printed shell laid flat." >}}
+  {{< img src="images/granular-jamming-pouch.jpg" alt="Nitrile rubber pouch filled with coffee grounds; attached syringe is used to pull a vacuum." grid-width="2" >}}
+  {{< img src="images/shell-flat-one-piece.jpg" alt="3D printed shell laid flat." grid-width="2" >}}
+{{< /figure-custom >}}
+
 {{< figure src="images/granular-jamming-pouch.jpg" title="Nitrile rubber pouch filled with coffee grounds; attached syringe is used to pull a vacuum." >}}
 
 {{< figure src="images/shell-flat-one-piece.jpg" title="3D printed shell laid flat." >}}
