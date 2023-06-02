@@ -20,10 +20,6 @@ Cervical collars are neck braces used for suspected spinal trauma and for post-s
   {{< img src="images/shell-flat-one-piece.jpg" alt="3D printed shell laid flat." grid-width="2" >}}
 {{< /figure-custom >}}
 
-{{< figure src="images/granular-jamming-pouch.jpg" title="Nitrile rubber pouch filled with coffee grounds; attached syringe is used to pull a vacuum." >}}
-
-{{< figure src="images/shell-flat-one-piece.jpg" title="3D printed shell laid flat." >}}
-
 The previous prototype uses channels cut into a flat print at varying angles and spacing to allow the collar to fold up into a complex 3-D shape rather than a simple cone or cylinder. I used a 3-D scan of a person’s head, neck, and shoulders to create the initial 3-D part. Then, using Solidworks tools and a VBA script, I was able to flatten the collar into a printable shape. I placed in the top 10 engineering projects at LSU’s Discover Day of Spring 2021 with that design.
 
 {{< figure src="images/shell-on-3d-model.png" title="Collar shell on person in SolidWorks." >}}
