@@ -2,7 +2,6 @@ baseURL: https://patrick-herke.com
 
 languageCode: en-us
 title: "Patrick's Portfolio - Work in Progress"
-theme: "toha"
 
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
@@ -20,6 +19,16 @@ markup:
 
 # Enable global emoji support
 enableEmoji: true
+
+# Module imports
+module:
+  imports:
+  - disable: false
+    path: my-shortcodes
+  - disable: false
+    ignoreConfig: false
+    ignoreImports: false
+    path: github.com/hugo-toha/toha
 
 # Site parameters
 params:

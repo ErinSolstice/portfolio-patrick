@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>materials</title>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Materials</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/css/layouts/main.css"/>
 <link rel="stylesheet" href="/css/navigators/navbar.css"/>
 <link rel="stylesheet" href="/css/plyr.css"/>
+
 <link rel="stylesheet" href="/css/flag-icon.min.css"/>
 
 
@@ -21,15 +22,17 @@
 
 
 
+<link rel="stylesheet" href="/css/colortheme/colortheme.css"/>
 
 
 
 
-<meta property="og:title" content="materials" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://patrick-herke.com/tags/materials/" />
 
+<meta property="og:url" content="http://localhost:1313/tags/materials/">
+  <meta property="og:site_name" content="Patrick&#39;s Portfolio - Work in Progress">
+  <meta property="og:title" content="Materials">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
 
     
@@ -71,7 +74,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/">
-      Patrick&#39;s Blog</a>
+      Patrick&#39;s Portfolio - Work in Progress</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -79,6 +82,27 @@
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
       
+      
+        <li class="nav-item dropdown">
+
+<div id="theme-initialization" style="display: none;"
+  default-theme="system"></div>
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" onclick="enableLightTheme()">
+    <img class="menu-icon-center" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="enableDarkTheme()">
+    <img class="menu-icon-center" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="useSystemTheme()">
+    <img class="menu-icon-center" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
       
       </ul>
     </div>
@@ -116,47 +140,57 @@
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/cad/" data-taxonomy-term="cad"><span class="taxonomy-label">cad</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/baking/" data-taxonomy-term="baking"><span class="taxonomy-label">Baking</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/chemistry/" data-taxonomy-term="chemistry"><span class="taxonomy-label">chemistry</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/cad/" data-taxonomy-term="cad"><span class="taxonomy-label">Cad</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/electronics/" data-taxonomy-term="electronics"><span class="taxonomy-label">electronics</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/chemistry/" data-taxonomy-term="chemistry"><span class="taxonomy-label">Chemistry</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/flute/" data-taxonomy-term="flute"><span class="taxonomy-label">flute</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/electronics/" data-taxonomy-term="electronics"><span class="taxonomy-label">Electronics</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term active" href="https://patrick-herke.com/tags/materials/" data-taxonomy-term="materials"><span class="taxonomy-label">materials</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/flute/" data-taxonomy-term="flute"><span class="taxonomy-label">Flute</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/raspberry-pi/" data-taxonomy-term="raspberry-pi"><span class="taxonomy-label">raspberry-pi</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/king-cake/" data-taxonomy-term="king-cake"><span class="taxonomy-label">King-Cake</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/robotics/" data-taxonomy-term="robotics"><span class="taxonomy-label">robotics</span></a></li>
+          <li><a class="taxonomy-term active" href="http://localhost:1313/tags/materials/" data-taxonomy-term="materials"><span class="taxonomy-label">Materials</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/teardown/" data-taxonomy-term="teardown"><span class="taxonomy-label">teardown</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/raspberry-pi/" data-taxonomy-term="raspberry-pi"><span class="taxonomy-label">Raspberry-Pi</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/woodworking/" data-taxonomy-term="woodworking"><span class="taxonomy-label">woodworking</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/robotics/" data-taxonomy-term="robotics"><span class="taxonomy-label">Robotics</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/teardown/" data-taxonomy-term="teardown"><span class="taxonomy-label">Teardown</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/woodworking/" data-taxonomy-term="woodworking"><span class="taxonomy-label">Woodworking</span></a></li>
         
   
 
@@ -186,8 +220,141 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">Filter Press Troubleshooting</h5>
-        <p class="card-text post-summary">The plates of the filter press were undergoing significant warping resulting in poor filtering, bypass, and leakage. Filter press plates should not need to be regularly replaced, but they were replacing the entire set every 3-5 months for ~$12,000 each time.
-Leaking of filter press. All pictures were taken ~1 week before plate swap. Roughly middle of stack. Shows plates bowing inward towards the center. Most visible by looking at top edge of plate.</p>
+        <p class="card-text post-summary"><p>The plates of the filter press were undergoing significant warping resulting in poor filtering, bypass, and leakage.  Filter press plates should not need to be regularly replaced, but they were replacing the entire set every 3-5 months for ~$12,000 each time.</p>
+<figure class="grid two">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/3 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/3 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/3 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/filter-press/images/leaking-press_hu8933441773685541663.png 500w
+    
+    
+    
+    '
+    
+      src="/posts/projects/filter-press/images/leaking-press.png"
+    
+    alt="Leaking of filter press. All pictures were taken ~1 week before plate swap."
+  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/3 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/3 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/3 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/filter-press/images/bowing-plates-1_hu12877263329294575029.png 500w
+    
+    
+    
+    '
+    
+      src="/posts/projects/filter-press/images/bowing-plates-1.png"
+    
+    alt="Roughly middle of stack. Shows plates bowing inward towards the center. Most visible by looking at top edge of plate."
+  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/3 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/3 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/3 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/filter-press/images/cake-material_hu5242050734358685731.png 500w
+    
+    
+    
+    '
+    
+      src="/posts/projects/filter-press/images/cake-material.png"
+    
+    alt="Cake material from filter press with high liquid content."
+  >
+
+
+    <figcaption>
+      <p>Shows leaking of the filter press and associated bowing of the plates. Consistency of cake material is also shown. All pictures were taken ~1 week before plate swap.</p></p>
       </div>
       <div class="card-footer">
         <span class="float-left">August 1, 2021</span>
@@ -228,7 +395,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
 
 
   
-    
+      
   
 
 
@@ -288,7 +455,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#about">About</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
                 </li>
               
               
@@ -297,7 +464,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#skills">Skills</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
                 </li>
               
               
@@ -306,7 +473,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#experiences">Experiences</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
                 </li>
               
               
@@ -315,7 +482,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#education">Education</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
                 </li>
               
               
@@ -324,7 +491,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#projects">Projects</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
                 </li>
               
               
@@ -333,7 +500,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#publications">Publications</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#publications">Publications</a>
                 </li>
               
               
@@ -342,7 +509,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#recent-posts">Recent Posts</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
                 </li>
               
               
@@ -382,22 +549,6 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
         
         
         
-          
-          <div class="col-md-4 col-sm-12">
-            <p>Stay up to date with email notification</p>
-            
-              <form method='post' action='https://blogtrottr.com'>
-              <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
-              <input type='hidden' name='btr_url' value='https://patrick-herke.comindex.xml' />
-              <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
-              <button type="submit" class="btn btn-info"> Submit </button>
-              </div>
-              </form>
-            
-          </div>
-        
       </div>
     </div>
     
@@ -406,12 +557,12 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
     <div class="container">
       <div class="row text-left">
         <div class="col-md-4">
-          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
         <div class="col-md-4 text-right">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
@@ -434,6 +585,11 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/plyr.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script type="text/javascript" src="/js/darkreader.js"></script>
+<script type="text/javascript" src="/js/darkmode-darkreader.js"></script>
 
 
 

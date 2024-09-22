@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>cad</title>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Cad</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/css/layouts/main.css"/>
 <link rel="stylesheet" href="/css/navigators/navbar.css"/>
 <link rel="stylesheet" href="/css/plyr.css"/>
+
 <link rel="stylesheet" href="/css/flag-icon.min.css"/>
 
 
@@ -21,15 +22,17 @@
 
 
 
+<link rel="stylesheet" href="/css/colortheme/colortheme.css"/>
 
 
 
 
-<meta property="og:title" content="cad" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://patrick-herke.com/tags/cad/" />
 
+<meta property="og:url" content="http://localhost:1313/tags/cad/">
+  <meta property="og:site_name" content="Patrick&#39;s Portfolio - Work in Progress">
+  <meta property="og:title" content="Cad">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
 
     
@@ -71,7 +74,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/">
-      Patrick&#39;s Blog</a>
+      Patrick&#39;s Portfolio - Work in Progress</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -79,6 +82,27 @@
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
       
+      
+        <li class="nav-item dropdown">
+
+<div id="theme-initialization" style="display: none;"
+  default-theme="system"></div>
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" onclick="enableLightTheme()">
+    <img class="menu-icon-center" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="enableDarkTheme()">
+    <img class="menu-icon-center" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="useSystemTheme()">
+    <img class="menu-icon-center" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
       
       </ul>
     </div>
@@ -116,47 +140,57 @@
           
             
           
-          <li><a class="taxonomy-term active" href="https://patrick-herke.com/tags/cad/" data-taxonomy-term="cad"><span class="taxonomy-label">cad</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/baking/" data-taxonomy-term="baking"><span class="taxonomy-label">Baking</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/chemistry/" data-taxonomy-term="chemistry"><span class="taxonomy-label">chemistry</span></a></li>
+          <li><a class="taxonomy-term active" href="http://localhost:1313/tags/cad/" data-taxonomy-term="cad"><span class="taxonomy-label">Cad</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/electronics/" data-taxonomy-term="electronics"><span class="taxonomy-label">electronics</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/chemistry/" data-taxonomy-term="chemistry"><span class="taxonomy-label">Chemistry</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/flute/" data-taxonomy-term="flute"><span class="taxonomy-label">flute</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/electronics/" data-taxonomy-term="electronics"><span class="taxonomy-label">Electronics</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/materials/" data-taxonomy-term="materials"><span class="taxonomy-label">materials</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/flute/" data-taxonomy-term="flute"><span class="taxonomy-label">Flute</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/raspberry-pi/" data-taxonomy-term="raspberry-pi"><span class="taxonomy-label">raspberry-pi</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/king-cake/" data-taxonomy-term="king-cake"><span class="taxonomy-label">King-Cake</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/robotics/" data-taxonomy-term="robotics"><span class="taxonomy-label">robotics</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/materials/" data-taxonomy-term="materials"><span class="taxonomy-label">Materials</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/teardown/" data-taxonomy-term="teardown"><span class="taxonomy-label">teardown</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/raspberry-pi/" data-taxonomy-term="raspberry-pi"><span class="taxonomy-label">Raspberry-Pi</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/woodworking/" data-taxonomy-term="woodworking"><span class="taxonomy-label">woodworking</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/robotics/" data-taxonomy-term="robotics"><span class="taxonomy-label">Robotics</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/teardown/" data-taxonomy-term="teardown"><span class="taxonomy-label">Teardown</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/woodworking/" data-taxonomy-term="woodworking"><span class="taxonomy-label">Woodworking</span></a></li>
         
   
 
@@ -186,8 +220,59 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">Blender Teardown SolidWorks Drawings</h5>
-        <p class="card-text post-summary">As part of a class project for Sophomore Design, my team did a teardown of a blender. For our report, we created Solidworks models of the most interesting components. Presented here are two of the drawings that I did for the brush assembly of the DC motor of the blender.
-Spring housing. Spring plate. Brush assembly. </p>
+        <p class="card-text post-summary"><p>As part of a class project for Sophomore Design, my team did a teardown of a blender. For our report, we created Solidworks models of the most interesting components. Presented here are two of the drawings that I did for the brush assembly of the DC motor of the blender.</p>
+<figure class="grid one">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/1 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/1 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/1 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/blender-teardown/images/ba-spring-housing_hu1707588301472815545.png 500w
+    
+    
+      , /posts/projects/blender-teardown/images/ba-spring-housing_hu2665528790695116925.png 800w
+    
+    
+      , /posts/projects/blender-teardown/images/ba-spring-housing_hu14138085746921232507.png 1200w
+    
+    '
+    
+      src="/posts/projects/blender-teardown/images/ba-spring-housing.png"
+    
+    alt="Spring housing."
+  >
+
+
+    <figcaption>
+      <p>Spring housing.</p></p>
       </div>
       <div class="card-footer">
         <span class="float-left">March 1, 2020</span>
@@ -228,7 +313,7 @@ Spring housing. Spring plate. Brush assembly. </p>
 
 
   
-    
+      
   
 
 
@@ -288,7 +373,7 @@ Spring housing. Spring plate. Brush assembly. </p>
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#about">About</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
                 </li>
               
               
@@ -297,7 +382,7 @@ Spring housing. Spring plate. Brush assembly. </p>
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#skills">Skills</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
                 </li>
               
               
@@ -306,7 +391,7 @@ Spring housing. Spring plate. Brush assembly. </p>
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#experiences">Experiences</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
                 </li>
               
               
@@ -315,7 +400,7 @@ Spring housing. Spring plate. Brush assembly. </p>
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#education">Education</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
                 </li>
               
               
@@ -324,7 +409,7 @@ Spring housing. Spring plate. Brush assembly. </p>
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#projects">Projects</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
                 </li>
               
               
@@ -333,7 +418,7 @@ Spring housing. Spring plate. Brush assembly. </p>
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#publications">Publications</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#publications">Publications</a>
                 </li>
               
               
@@ -342,7 +427,7 @@ Spring housing. Spring plate. Brush assembly. </p>
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#recent-posts">Recent Posts</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
                 </li>
               
               
@@ -382,22 +467,6 @@ Spring housing. Spring plate. Brush assembly. </p>
         
         
         
-          
-          <div class="col-md-4 col-sm-12">
-            <p>Stay up to date with email notification</p>
-            
-              <form method='post' action='https://blogtrottr.com'>
-              <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
-              <input type='hidden' name='btr_url' value='https://patrick-herke.comindex.xml' />
-              <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
-              <button type="submit" class="btn btn-info"> Submit </button>
-              </div>
-              </form>
-            
-          </div>
-        
       </div>
     </div>
     
@@ -406,12 +475,12 @@ Spring housing. Spring plate. Brush assembly. </p>
     <div class="container">
       <div class="row text-left">
         <div class="col-md-4">
-          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
         <div class="col-md-4 text-right">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
@@ -434,6 +503,11 @@ Spring housing. Spring plate. Brush assembly. </p>
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/plyr.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script type="text/javascript" src="/js/darkreader.js"></script>
+<script type="text/javascript" src="/js/darkmode-darkreader.js"></script>
 
 
 

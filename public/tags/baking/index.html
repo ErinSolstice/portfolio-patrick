@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Baking</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="/google-fonts/Mulish/mulish.css"/>
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+<link rel="stylesheet" href="/css/colortheme/colortheme.css"/>
+
+
+
+
+
+<meta property="og:url" content="http://localhost:1313/tags/baking/">
+  <meta property="og:site_name" content="Patrick&#39;s Portfolio - Work in Progress">
+  <meta property="og:title" content="Baking">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+
+
+    
+    
+    <link rel="stylesheet" href="/css/layouts/list.css">
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      Patrick&#39;s Portfolio - Work in Progress</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      
+        <li class="nav-item dropdown">
+
+<div id="theme-initialization" style="display: none;"
+  default-theme="system"></div>
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" onclick="enableLightTheme()">
+    <img class="menu-icon-center" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="enableDarkTheme()">
+    <img class="menu-icon-center" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="useSystemTheme()">
+    <img class="menu-icon-center" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+  
+</nav>
+
+
+
+      
+      
+  
+  
+
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="Search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/tags" data-filter="all">Tags</a></li>
+            <div class="subtree taxonomy-terms">
+              
+              
+
+
+
+  
+  
+        
+          
+            
+          
+          <li><a class="taxonomy-term active" href="http://localhost:1313/tags/baking/" data-taxonomy-term="baking"><span class="taxonomy-label">Baking</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/cad/" data-taxonomy-term="cad"><span class="taxonomy-label">Cad</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/chemistry/" data-taxonomy-term="chemistry"><span class="taxonomy-label">Chemistry</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/electronics/" data-taxonomy-term="electronics"><span class="taxonomy-label">Electronics</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/flute/" data-taxonomy-term="flute"><span class="taxonomy-label">Flute</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/king-cake/" data-taxonomy-term="king-cake"><span class="taxonomy-label">King-Cake</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/materials/" data-taxonomy-term="materials"><span class="taxonomy-label">Materials</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/raspberry-pi/" data-taxonomy-term="raspberry-pi"><span class="taxonomy-label">Raspberry-Pi</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/robotics/" data-taxonomy-term="robotics"><span class="taxonomy-label">Robotics</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/teardown/" data-taxonomy-term="teardown"><span class="taxonomy-label">Teardown</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/woodworking/" data-taxonomy-term="woodworking"><span class="taxonomy-label">Woodworking</span></a></li>
+        
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid post-card-holder" id="post-card-holder">
+      
+      
+      
+        
+          <div class="post-card">
+  <a href="/posts/study-abroad-blog/week-5/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/posts/study-abroad-blog/week-5/images/king-cake_first-attempt_20230305T233331.jpg' alt="Hero Image">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Week 5</h5>
+        <p class="card-text post-summary"><p>This week:</p>
+<ul>
+<li>I gave a presentation.</li>
+<li>I went to a market called <a href="https://www.esmadrid.com/en/whats-on/salesas-village">The Festival by SALESAS</a>.</li>
+<li>I tried the matcha latte from Bianchi Kiosko Caffé.</li>
+<li>I made a King Cake for the first time.</li>
+</ul>
+<p>I had a presentation on Thursday. I was a little nervous going into it because it was a very long presentation. We had the whole class, two whole hours, to present on social responsibility as it relates to universities. Aside from a very basic script that we spent maybe 15 or 30 minutes on and then never re-visited, everyone kept their own separate notes. So, it was very difficult to organize the presentation as you couldn&rsquo;t really see the big picture. In the end it went well, but it was more like a collection of different presentations than a single presentation. It didn&rsquo;t flow well.</p></p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">March 6, 2023</span>
+        <a
+        href="/posts/study-abroad-blog/week-5/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Read</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+        
+      
+    </div>
+    <div class="paginator">
+      
+    </div>
+  </div>
+</section>
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+  
+      
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Navigation</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#publications">Publications</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
+                </li>
+              
+              
+              
+            
+              
+            
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact me:</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:pherke1@lsu.edu target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>pherke1@lsu.edu</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://github.com/ErinSolstice target="_blank" rel="noopener">
+                  <span><i class="fab fa-github"></i></span> <span>ErinSolstice</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://www.linkedin.com/in/PatrickHerke target="_blank" rel="noopener">
+                  <span><i class="fab fa-linkedin"></i></span> <span>Patrick Herke</span>
+                </a></li>
+              
+            
+          </ul>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
+            Toha
+          </a>
+        </div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
+        <div class="col-md-4 text-right">
+          <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
+          <img
+            src="/images/hugo-logo.svg"
+            alt="Hugo Logo"
+            height="18"
+          />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script type="text/javascript" src="/js/darkreader.js"></script>
+<script type="text/javascript" src="/js/darkmode-darkreader.js"></script>
+
+
+
+    
+    
+    <script src="/js/list.js"></script>
+
+
+    
+</body>
+</html>

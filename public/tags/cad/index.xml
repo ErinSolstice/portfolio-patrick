@@ -1,19 +1,70 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cad on Patrick&#39;s Blog</title>
-    <link>https://patrick-herke.com/tags/cad/</link>
-    <description>Recent content in cad on Patrick&#39;s Blog</description>
+    <title>Cad on Patrick&#39;s Portfolio - Work in Progress</title>
+    <link>http://localhost:1313/tags/cad/</link>
+    <description>Recent content in Cad on Patrick&#39;s Portfolio - Work in Progress</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://patrick-herke.com/tags/cad/index.xml" rel="self" type="application/rss+xml" /><item>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/cad/index.xml" rel="self" type="application/rss+xml" /><item>
       <title>Blender Teardown SolidWorks Drawings</title>
-      <link>https://patrick-herke.com/posts/projects/blender-teardown/</link>
+      <link>http://localhost:1313/posts/projects/blender-teardown/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://patrick-herke.com/posts/projects/blender-teardown/</guid>
-      <description>As part of a class project for Sophomore Design, my team did a teardown of a blender. For our report, we created Solidworks models of the most interesting components. Presented here are two of the drawings that I did for the brush assembly of the DC motor of the blender.
-Spring housing. Spring plate. Brush assembly. </description>
+      <guid>http://localhost:1313/posts/projects/blender-teardown/</guid>
+      <description>&lt;p&gt;As part of a class project for Sophomore Design, my team did a teardown of a blender. For our report, we created Solidworks models of the most interesting components. Presented here are two of the drawings that I did for the brush assembly of the DC motor of the blender.&lt;/p&gt;
+&lt;figure class=&#34;grid one&#34;&gt;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  &lt;img
+    sizes=&#34;(min-width: 1824px) calc(1/1 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/1 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/1 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw&#34;
+    srcset=&#39;
+    
+      /posts/projects/blender-teardown/images/ba-spring-housing_hu1707588301472815545.png 500w
+    
+    
+      , /posts/projects/blender-teardown/images/ba-spring-housing_hu2665528790695116925.png 800w
+    
+    
+      , /posts/projects/blender-teardown/images/ba-spring-housing_hu14138085746921232507.png 1200w
+    
+    &#39;
+    
+      src=&#34;http://localhost:1313/posts/projects/blender-teardown/images/ba-spring-housing.png&#34;
+    
+    alt=&#34;Spring housing.&#34;
+  &gt;
+
+
+    &lt;figcaption&gt;
+      &lt;p&gt;Spring housing.&lt;/p&gt;</description>
     </item>
     
     

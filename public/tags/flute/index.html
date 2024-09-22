@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>flute</title>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Flute</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/css/layouts/main.css"/>
 <link rel="stylesheet" href="/css/navigators/navbar.css"/>
 <link rel="stylesheet" href="/css/plyr.css"/>
+
 <link rel="stylesheet" href="/css/flag-icon.min.css"/>
 
 
@@ -21,15 +22,17 @@
 
 
 
+<link rel="stylesheet" href="/css/colortheme/colortheme.css"/>
 
 
 
 
-<meta property="og:title" content="flute" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://patrick-herke.com/tags/flute/" />
 
+<meta property="og:url" content="http://localhost:1313/tags/flute/">
+  <meta property="og:site_name" content="Patrick&#39;s Portfolio - Work in Progress">
+  <meta property="og:title" content="Flute">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
 
 
     
@@ -71,7 +74,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/">
-      Patrick&#39;s Blog</a>
+      Patrick&#39;s Portfolio - Work in Progress</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -79,6 +82,27 @@
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
       
+      
+        <li class="nav-item dropdown">
+
+<div id="theme-initialization" style="display: none;"
+  default-theme="system"></div>
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" onclick="enableLightTheme()">
+    <img class="menu-icon-center" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="enableDarkTheme()">
+    <img class="menu-icon-center" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="useSystemTheme()">
+    <img class="menu-icon-center" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
       
       </ul>
     </div>
@@ -116,47 +140,57 @@
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/cad/" data-taxonomy-term="cad"><span class="taxonomy-label">cad</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/baking/" data-taxonomy-term="baking"><span class="taxonomy-label">Baking</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/chemistry/" data-taxonomy-term="chemistry"><span class="taxonomy-label">chemistry</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/cad/" data-taxonomy-term="cad"><span class="taxonomy-label">Cad</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/electronics/" data-taxonomy-term="electronics"><span class="taxonomy-label">electronics</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/chemistry/" data-taxonomy-term="chemistry"><span class="taxonomy-label">Chemistry</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term active" href="https://patrick-herke.com/tags/flute/" data-taxonomy-term="flute"><span class="taxonomy-label">flute</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/electronics/" data-taxonomy-term="electronics"><span class="taxonomy-label">Electronics</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/materials/" data-taxonomy-term="materials"><span class="taxonomy-label">materials</span></a></li>
+          <li><a class="taxonomy-term active" href="http://localhost:1313/tags/flute/" data-taxonomy-term="flute"><span class="taxonomy-label">Flute</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/raspberry-pi/" data-taxonomy-term="raspberry-pi"><span class="taxonomy-label">raspberry-pi</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/king-cake/" data-taxonomy-term="king-cake"><span class="taxonomy-label">King-Cake</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/robotics/" data-taxonomy-term="robotics"><span class="taxonomy-label">robotics</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/materials/" data-taxonomy-term="materials"><span class="taxonomy-label">Materials</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/teardown/" data-taxonomy-term="teardown"><span class="taxonomy-label">teardown</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/raspberry-pi/" data-taxonomy-term="raspberry-pi"><span class="taxonomy-label">Raspberry-Pi</span></a></li>
         
           
             
           
-          <li><a class="taxonomy-term " href="https://patrick-herke.com/tags/woodworking/" data-taxonomy-term="woodworking"><span class="taxonomy-label">woodworking</span></a></li>
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/robotics/" data-taxonomy-term="robotics"><span class="taxonomy-label">Robotics</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/teardown/" data-taxonomy-term="teardown"><span class="taxonomy-label">Teardown</span></a></li>
+        
+          
+            
+          
+          <li><a class="taxonomy-term " href="http://localhost:1313/tags/woodworking/" data-taxonomy-term="woodworking"><span class="taxonomy-label">Woodworking</span></a></li>
         
   
 
@@ -186,9 +220,15 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">Anasazi Style Rim-blown Flute</h5>
-        <p class="card-text post-summary">Playing a custom composition on an Anasazi Style rim-blown flute while outdoors.
-My goal with this project was to design, build, and learn to play a rim-blown flute based on the Anasazi flutes found in the American Southwest. The original idea sprung from a chance encounter with whistles made from elderberry wood which led down a rabbit hole into full blown flute making.
-Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p>
+        <p class="card-text post-summary"><p>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bb7d3VP3vYQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<em>Playing a custom composition on an Anasazi Style rim-blown flute while outdoors.</em></p></p>
       </div>
       <div class="card-footer">
         <span class="float-left">December 1, 2018</span>
@@ -229,7 +269,7 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
 
 
   
-    
+      
   
 
 
@@ -289,7 +329,7 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#about">About</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
                 </li>
               
               
@@ -298,7 +338,7 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#skills">Skills</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
                 </li>
               
               
@@ -307,7 +347,7 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#experiences">Experiences</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
                 </li>
               
               
@@ -316,7 +356,7 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#education">Education</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
                 </li>
               
               
@@ -325,7 +365,7 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#projects">Projects</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
                 </li>
               
               
@@ -334,7 +374,7 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#publications">Publications</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#publications">Publications</a>
                 </li>
               
               
@@ -343,7 +383,7 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#recent-posts">Recent Posts</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
                 </li>
               
               
@@ -383,22 +423,6 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
         
         
         
-          
-          <div class="col-md-4 col-sm-12">
-            <p>Stay up to date with email notification</p>
-            
-              <form method='post' action='https://blogtrottr.com'>
-              <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
-              <input type='hidden' name='btr_url' value='https://patrick-herke.comindex.xml' />
-              <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
-              <button type="submit" class="btn btn-info"> Submit </button>
-              </div>
-              </form>
-            
-          </div>
-        
       </div>
     </div>
     
@@ -407,12 +431,12 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
     <div class="container">
       <div class="row text-left">
         <div class="col-md-4">
-          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
         <div class="col-md-4 text-right">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
@@ -435,6 +459,11 @@ Finished flute against grass. Four Anasazi Flutes from the Broken Flute Cave.</p
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/plyr.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script type="text/javascript" src="/js/darkreader.js"></script>
+<script type="text/javascript" src="/js/darkmode-darkreader.js"></script>
 
 
 

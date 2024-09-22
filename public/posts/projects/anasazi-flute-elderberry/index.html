@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Anasazi Style Rim-blown Flute</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/css/layouts/main.css"/>
 <link rel="stylesheet" href="/css/navigators/navbar.css"/>
 <link rel="stylesheet" href="/css/plyr.css"/>
+
 <link rel="stylesheet" href="/css/flag-icon.min.css"/>
 
 
@@ -21,17 +22,23 @@
 
 
 
+<link rel="stylesheet" href="/css/colortheme/colortheme.css"/>
 
 
 
 
-<meta property="og:title" content="Anasazi Style Rim-blown Flute" />
-<meta property="og:description" content="Creating a replica of ancient Anasazi style flutes." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://patrick-herke.com/posts/projects/anasazi-flute-elderberry/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2018-12-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2018-12-01T00:00:00+00:00" />
 
+<meta property="og:url" content="http://localhost:1313/posts/projects/anasazi-flute-elderberry/">
+  <meta property="og:site_name" content="Patrick&#39;s Portfolio - Work in Progress">
+  <meta property="og:title" content="Anasazi Style Rim-blown Flute">
+  <meta property="og:description" content="Creating a replica of ancient Anasazi style flutes.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-12-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2018-12-01T00:00:00+00:00">
+    <meta property="article:tag" content="Flute">
+    <meta property="article:tag" content="Woodworking">
 
 
     
@@ -78,7 +85,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/">
-      Patrick&#39;s Blog</a>
+      Patrick&#39;s Portfolio - Work in Progress</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -86,6 +93,27 @@
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
       
+      
+        <li class="nav-item dropdown">
+
+<div id="theme-initialization" style="display: none;"
+  default-theme="system"></div>
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" onclick="enableLightTheme()">
+    <img class="menu-icon-center" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="enableDarkTheme()">
+    <img class="menu-icon-center" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="useSystemTheme()">
+    <img class="menu-icon-center" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
       
       </ul>
     </div>
@@ -107,7 +135,7 @@
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
             <div class="subtree">
                 
   
@@ -177,6 +205,31 @@
     </li>
   
 
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/study-abroad-blog/">Study Abroad Blog</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/study-abroad-blog/week-5/" title="Week 5">Week 5</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
 
             </div>
           </ul>
@@ -198,7 +251,7 @@
       
       <div class="page-content">
         <div class="author-profile ml-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/author/bio-photo_snow_hub093b72d847f6c47acf4a2e54a947677_198460_120x120_fit_q75_box.jpg' alt="Author Image">
+          <img class="rounded-circle" src='/images/author/bio-photo-professional_hu1023234028166805110.jpg' alt="Author Image">
           <h5 class="author-name">Patrick Herke</h5>
           <p>Saturday, December 1, 2018</p>
         </div>
@@ -209,72 +262,75 @@
         
         <div class="post-content" id="post-content">
           <p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/bb7d3VP3vYQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/bb7d3VP3vYQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <em>Playing a custom composition on an Anasazi Style rim-blown flute while outdoors.</em></p>
 <p>My goal with this project was to design, build, and learn to play a rim-blown flute based on the Anasazi flutes found in the American Southwest. The original idea sprung from a chance encounter with whistles made from elderberry wood which led down a rabbit hole into full blown flute making.</p>
-<figure><img src="images/finished-flute.jpg"/><figcaption>
-            <h4>Finished flute against grass.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/finished-flute.jpg"><figcaption>
+      <h4>Finished flute against grass.</h4>
+    </figcaption>
 </figure>
 
-<figure><img src="images/MorrisFlutesSmall.jpg"/><figcaption>
-            <h4>Four Anasazi Flutes from the Broken Flute Cave.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/MorrisFlutesSmall.jpg"><figcaption>
+      <h4>Four Anasazi Flutes from the Broken Flute Cave.</h4>
+    </figcaption>
 </figure>
 
 <p>Hollowing out the elderberry branch was relatively simple as the center is a soft pith. However, before I could tune a rim-blown flute, I first needed to teach myself how to play one. I had played the viola for several years but had never played a wind instrument.</p>
-<figure><img src="images/raw-branch.jpg"/><figcaption>
-            <h4>Elderberry branch prior to any processing.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/raw-branch.jpg"><figcaption>
+      <h4>Elderberry branch prior to any processing.</h4>
+    </figcaption>
 </figure>
 
-<figure><img src="images/removing-bark.jpg"/><figcaption>
-            <h4>Removing bark with a knife.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/removing-bark.jpg"><figcaption>
+      <h4>Removing bark with a knife.</h4>
+    </figcaption>
 </figure>
 
-<figure><img src="images/cutting-end.jpg"/><figcaption>
-            <h4>Cutting the end of the branch.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/cutting-end.jpg"><figcaption>
+      <h4>Cutting the end of the branch.</h4>
+    </figcaption>
 </figure>
 
-<figure><img src="images/removing-pith.jpg"/><figcaption>
-            <h4>Removing the pith from the elderberry branch.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/removing-pith.jpg"><figcaption>
+      <h4>Removing the pith from the elderberry branch.</h4>
+    </figcaption>
 </figure>
 
-<figure><img src="images/sanding-flute.jpg"/><figcaption>
-            <h4>Sanding the outside of the flute.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/sanding-flute.jpg"><figcaption>
+      <h4>Sanding the outside of the flute.</h4>
+    </figcaption>
 </figure>
 
 <p>Based on a small initial prototype, I found the higher notes easier to produce. So, I made several intermediate-sized prototypes as I experimented with hole placement and worked on developing my embouchure. After a swap in playing styles from vertical to oblique and many hours of practice, I managed to reliably produce the root note of the flute I wanted to make my final product. For the hole placement on the final flute, I used modified ratios of hole placement to flute length of the flutes found by archeologists in broken flute cave.</p>
-<figure><img src="images/tools-for-prepping-branch.jpg"/><figcaption>
-            <h4>Tools used to prepare the elderberry branch prior to drilling finger holes.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/tools-for-prepping-branch.jpg"><figcaption>
+      <h4>Tools used to prepare the elderberry branch prior to drilling finger holes.</h4>
+    </figcaption>
 </figure>
 
-<figure><img src="images/marking-holes.jpg"/><figcaption>
-            <h4>Measuring and marking the finger hole positions.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/marking-holes.jpg"><figcaption>
+      <h4>Measuring and marking the finger hole positions.</h4>
+    </figcaption>
 </figure>
 
-<figure><img src="images/drilling-holes.jpg"/><figcaption>
-            <h4>Drilling the finger holes with a drill press.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/drilling-holes.jpg"><figcaption>
+      <h4>Drilling the finger holes with a drill press.</h4>
+    </figcaption>
 </figure>
 
-<figure><img src="images/adjusting-holes-glue.jpg"/><figcaption>
-            <h4>Adjusting the finger holes with glue.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/adjusting-holes-glue.jpg"><figcaption>
+      <h4>Adjusting the finger holes with glue.</h4>
+    </figcaption>
 </figure>
 
-<figure><img src="images/adjusting-holes-file.jpg"/><figcaption>
-            <h4>Adjusting the finger holes with a file.</h4>
-        </figcaption>
+<figure><img src="/posts/projects/anasazi-flute-elderberry/images/adjusting-holes-file.jpg"><figcaption>
+      <h4>Adjusting the finger holes with a file.</h4>
+    </figcaption>
 </figure>
 
 <p>After about 5-6 months of research, prototyping, and testing, I had a rim-blown flute that I could play reasonably well. And, while not perfectly in tune, it had recognizable intervals and a good sound. The following link is to a google photos album with more pictures of the process and footage of me playing the flute.</p>
@@ -295,7 +351,7 @@
           
           <div class="col-md-6 btn-improve-page">
              
-               <a href="https://github.com/hugo-toha/hugo-toha.github.io/edit/main/content/posts%5cprojects%5canasazi-flute-elderberry%5cindex.md" title="Improve this page" target="_blank" rel="noopener">
+               <a href="https://github.com/ErinSolstice/portfolio-patrick/edit/main/content/posts/projects/anasazi-flute-elderberry/index.md" title="Improve this page" target="_blank" rel="noopener">
             
                 <i class="fas fa-code-branch"></i>
                 Improve this page
@@ -325,6 +381,9 @@
   
     
     
+  
+  
+
   
   
 
@@ -401,7 +460,7 @@
 
 
   
-    
+      
   
 
 
@@ -461,7 +520,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#about">About</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
                 </li>
               
               
@@ -470,7 +529,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#skills">Skills</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
                 </li>
               
               
@@ -479,7 +538,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#experiences">Experiences</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
                 </li>
               
               
@@ -488,7 +547,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#education">Education</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
                 </li>
               
               
@@ -497,7 +556,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#projects">Projects</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
                 </li>
               
               
@@ -506,7 +565,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#publications">Publications</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#publications">Publications</a>
                 </li>
               
               
@@ -515,7 +574,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#recent-posts">Recent Posts</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
                 </li>
               
               
@@ -555,22 +614,6 @@
         
         
         
-          
-          <div class="col-md-4 col-sm-12">
-            <p>Stay up to date with email notification</p>
-            
-              <form method='post' action='https://blogtrottr.com'>
-              <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
-              <input type='hidden' name='btr_url' value='https://patrick-herke.comindex.xml' />
-              <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
-              <button type="submit" class="btn btn-info"> Submit </button>
-              </div>
-              </form>
-            
-          </div>
-        
       </div>
     </div>
     
@@ -579,12 +622,12 @@
     <div class="container">
       <div class="row text-left">
         <div class="col-md-4">
-          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
         <div class="col-md-4 text-right">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
@@ -607,6 +650,11 @@
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/plyr.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script type="text/javascript" src="/js/darkreader.js"></script>
+<script type="text/javascript" src="/js/darkmode-darkreader.js"></script>
 
 
 

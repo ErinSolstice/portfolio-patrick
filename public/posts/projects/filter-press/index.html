@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Filter Press Troubleshooting</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="/css/layouts/main.css"/>
 <link rel="stylesheet" href="/css/navigators/navbar.css"/>
 <link rel="stylesheet" href="/css/plyr.css"/>
+
 <link rel="stylesheet" href="/css/flag-icon.min.css"/>
 
 
@@ -21,17 +22,23 @@
 
 
 
+<link rel="stylesheet" href="/css/colortheme/colortheme.css"/>
 
 
 
 
-<meta property="og:title" content="Filter Press Troubleshooting" />
-<meta property="og:description" content="Investigating what is causing the filter press plates to fail prematurely." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://patrick-herke.com/posts/projects/filter-press/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2021-08-01T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-08-01T00:00:00+00:00" />
 
+<meta property="og:url" content="http://localhost:1313/posts/projects/filter-press/">
+  <meta property="og:site_name" content="Patrick&#39;s Portfolio - Work in Progress">
+  <meta property="og:title" content="Filter Press Troubleshooting">
+  <meta property="og:description" content="Investigating what is causing the filter press plates to fail prematurely.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2021-08-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-08-01T00:00:00+00:00">
+    <meta property="article:tag" content="Materials">
+    <meta property="article:tag" content="Chemistry">
 
 
     
@@ -78,7 +85,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="/">
-      Patrick&#39;s Blog</a>
+      Patrick&#39;s Portfolio - Work in Progress</a>
     <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -86,6 +93,27 @@
     <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
       <ul class="navbar-nav ml-auto">
       
+      
+        <li class="nav-item dropdown">
+
+<div id="theme-initialization" style="display: none;"
+  default-theme="system"></div>
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" onclick="enableLightTheme()">
+    <img class="menu-icon-center" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="enableDarkTheme()">
+    <img class="menu-icon-center" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="useSystemTheme()">
+    <img class="menu-icon-center" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
       
       </ul>
     </div>
@@ -107,7 +135,7 @@
         </form>
         <div class="sidebar-tree">
           <ul class="tree" id="tree">
-            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <li id="list-heading"><a href="/posts/" data-filter="all">Posts</a></li>
             <div class="subtree">
                 
   
@@ -177,6 +205,31 @@
     </li>
   
 
+  
+  
+  
+  
+  
+    
+    <li>
+      <i class="fas fa-plus-circle"></i><a class="" href="/posts/study-abroad-blog/">Study Abroad Blog</a>
+      
+      <ul class="">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/study-abroad-blog/week-5/" title="Week 5">Week 5</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
 
             </div>
           </ul>
@@ -198,7 +251,7 @@
       
       <div class="page-content">
         <div class="author-profile ml-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/author/bio-photo_snow_hub093b72d847f6c47acf4a2e54a947677_198460_120x120_fit_q75_box.jpg' alt="Author Image">
+          <img class="rounded-circle" src='/images/author/bio-photo-professional_hu1023234028166805110.jpg' alt="Author Image">
           <h5 class="author-name">Patrick Herke</h5>
           <p>Sunday, August 1, 2021</p>
         </div>
@@ -209,21 +262,142 @@
         
         <div class="post-content" id="post-content">
           <p>The plates of the filter press were undergoing significant warping resulting in poor filtering, bypass, and leakage.  Filter press plates should not need to be regularly replaced, but they were replacing the entire set every 3-5 months for ~$12,000 each time.</p>
-<figure><img src="images/leaking-press.png"/><figcaption>
-            <h4>Leaking of filter press. All pictures were taken ~1 week before plate swap.</h4>
-        </figcaption>
-</figure>
+<figure class="grid two">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/3 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/3 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/3 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/filter-press/images/leaking-press_hu8933441773685541663.png 500w
+    
+    
+    
+    '
+    
+      src="/posts/projects/filter-press/images/leaking-press.png"
+    
+    alt="Leaking of filter press. All pictures were taken ~1 week before plate swap."
+  >
 
-<figure><img src="images/bowing-plates-1.png"/><figcaption>
-            <h4>Roughly middle of stack. Shows plates bowing inward towards the center. Most visible by looking at top edge of plate.</h4>
-        </figcaption>
-</figure>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/3 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/3 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/3 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/filter-press/images/bowing-plates-1_hu12877263329294575029.png 500w
+    
+    
+    
+    '
+    
+      src="/posts/projects/filter-press/images/bowing-plates-1.png"
+    
+    alt="Roughly middle of stack. Shows plates bowing inward towards the center. Most visible by looking at top edge of plate."
+  >
 
-<figure><img src="images/cake-material.png"/><figcaption>
-            <h4>Cake material from filter press with high liquid content.</h4>
-        </figcaption>
-</figure>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/3 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/3 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/3 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/filter-press/images/cake-material_hu5242050734358685731.png 500w
+    
+    
+    
+    '
+    
+      src="/posts/projects/filter-press/images/cake-material.png"
+    
+    alt="Cake material from filter press with high liquid content."
+  >
 
+
+    <figcaption>
+      <p>Shows leaking of the filter press and associated bowing of the plates. Consistency of cake material is also shown. All pictures were taken ~1 week before plate swap.</p>
+    </figcaption>
+</figure>
 <p>Examining the filter press manual thoroughly, I discovered that toluene, one of the process chemicals, was listed as chemically incompatible with the polypropylene plates. Consultation with the manufacturer indicated that the toluene in the slurry was likely chemically attacking the polypropylene plates and causing them to soften and warp; then, uneven cake buildup started occurring which accelerated the process.  Fortunately, the plates could be made from alternative materials such as PVDF and Glass Filled Nylon.</p>
 <p>My supervisor was considering purchasing one each of the PVDF and GF Nylon plates to test them out.  I pointed out that the rest of the plates would still warp and then allow uneven cake buildup.  As such, it wouldn’t be an accurate test of the chemical compatibility of the plates. I also noted that a chemical resistance chart showed that GF Nylon is rated slightly better than PVDF for exposure to toluene.</p>
 <p>At the end of my internship, I wrote a 7-page memo detailing the entire process of troubleshooting the filter press.  The following were the next steps that I laid out in the memo.</p>
@@ -250,7 +424,7 @@
           
           <div class="col-md-6 btn-improve-page">
              
-               <a href="https://github.com/hugo-toha/hugo-toha.github.io/edit/main/content/posts%5cprojects%5cfilter-press%5cindex.md" title="Improve this page" target="_blank" rel="noopener">
+               <a href="https://github.com/ErinSolstice/portfolio-patrick/edit/main/content/posts/projects/filter-press/index.md" title="Improve this page" target="_blank" rel="noopener">
             
                 <i class="fas fa-code-branch"></i>
                 Improve this page
@@ -295,6 +469,9 @@
   
   
 
+  
+  
+
 
 <div class="row next-prev-navigator">
   
@@ -306,6 +483,17 @@
     </div>
   
   
+      
+      
+        
+      
+      <div class="col-md-6 next-article">
+        <a href="/posts/study-abroad-blog/week-5/" title="Week 5" class="btn btn-outline-info">
+          <div>Next <i class="fas fa-chevron-circle-right"></i></div>
+          <div class="next-prev-text">Week 5</div>
+        </a>
+      </div>
+    
 </div>
 
       <hr />
@@ -354,7 +542,7 @@
 
 
   
-    
+      
   
 
 
@@ -414,7 +602,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#about">About</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
                 </li>
               
               
@@ -423,7 +611,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#skills">Skills</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
                 </li>
               
               
@@ -432,7 +620,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#experiences">Experiences</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
                 </li>
               
               
@@ -441,7 +629,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#education">Education</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
                 </li>
               
               
@@ -450,7 +638,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#projects">Projects</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
                 </li>
               
               
@@ -459,7 +647,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#publications">Publications</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#publications">Publications</a>
                 </li>
               
               
@@ -468,7 +656,7 @@
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#recent-posts">Recent Posts</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
                 </li>
               
               
@@ -508,22 +696,6 @@
         
         
         
-          
-          <div class="col-md-4 col-sm-12">
-            <p>Stay up to date with email notification</p>
-            
-              <form method='post' action='https://blogtrottr.com'>
-              <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
-              <input type='hidden' name='btr_url' value='https://patrick-herke.comindex.xml' />
-              <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
-              <button type="submit" class="btn btn-info"> Submit </button>
-              </div>
-              </form>
-            
-          </div>
-        
       </div>
     </div>
     
@@ -532,12 +704,12 @@
     <div class="container">
       <div class="row text-left">
         <div class="col-md-4">
-          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
         <div class="col-md-4 text-right">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
@@ -560,6 +732,11 @@
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/plyr.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script type="text/javascript" src="/js/darkreader.js"></script>
+<script type="text/javascript" src="/js/darkmode-darkreader.js"></script>
 
 
 

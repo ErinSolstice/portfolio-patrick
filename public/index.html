@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	<meta name="generator" content="Hugo 0.103.1" />
-    <title>Patrick&#39;s Blog</title>
+	<meta name="generator" content="Hugo 0.134.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Patrick&#39;s Portfolio - Work in Progress</title>
     
     
       
@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="/css/layouts/main.css"/>
 <link rel="stylesheet" href="/css/navigators/navbar.css"/>
 <link rel="stylesheet" href="/css/plyr.css"/>
+
 <link rel="stylesheet" href="/css/flag-icon.min.css"/>
 
 
@@ -30,6 +31,8 @@
 <link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
 
 
+
+<link rel="stylesheet" href="/css/colortheme/colortheme.css"/>
 
 
 
@@ -45,7 +48,7 @@
 <meta property="og:title" content="Patrick&#39;s Blog"/>
 <meta property="og:type" content="website"/>
 <meta property="og:description" content="Portfolio and personal blog of Patrick Herke."/>
-<meta property="og:image" content="https://patrick-herke.com/images/author/bio-photo_snow.jpg">
+<meta property="og:image" content="http://localhost:1313/images/author/bio-photo_snow.jpg">
 <meta property="og:url" content="https://patrick-herke.com">
 
     <link rel="stylesheet" href="/css/sections/home.css"/>
@@ -104,7 +107,7 @@
 <nav class="navbar navbar-expand-xl top-navbar initial-navbar" id="top-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      Patrick&#39;s Blog</a>
+      Patrick&#39;s Portfolio - Work in Progress</a>
     <button
       class="navbar-toggler navbar-dark"
       id="navbar-toggler"
@@ -219,12 +222,33 @@
         
         
           <li class="nav-item">
-            <a class="nav-link" id="blog-link" href="/posts">Posts</a>
+            <a class="nav-link" id="blog-link" href="/posts/">Posts</a>
           </li>
         
         
         
         
+        
+          <li class="nav-item dropdown">
+
+<div id="theme-initialization" style="display: none;"
+  default-theme="system"></div>
+<a class="nav-link dropdown-toggle"  href="#" id="themeSelector" role="button"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <img id="navbar-theme-icon-svg" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+</a>
+<div class="dropdown-menu dropdown-menu-icons-only" aria-labelledby="themeSelector">
+  <a class="dropdown-item nav-link" href="#" onclick="enableLightTheme()">
+    <img class="menu-icon-center" src="/icons/sun-svgrepo-com.svg" width=20 alt="Light Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="enableDarkTheme()">
+    <img class="menu-icon-center" src="/icons/moon-svgrepo-com.svg" width=20 alt="Dark Theme">
+  </a>
+  <a class="dropdown-item nav-link" href="#" onclick="useSystemTheme()">
+    <img class="menu-icon-center" src="/icons/computer-svgrepo-com.svg" width=20 alt="System Theme">
+  </a>
+</div>
+</li>
         
       </ul>
     </div>
@@ -249,6 +273,8 @@
 
 
 
+
+  
 
 
 
@@ -294,27 +320,27 @@
   <style>
      
     #homePageBackgroundImageDivStyled {
-      background-image: url('/images/default-background_hu3d03a01dcc18bc5be0e67db3d8d209a6_1182514_500x0_resize_q75_box.jpg');
+      background-image: url('/images/site/background-sunset-acadia-1_hu17552092087884001818.jpg');
     }
      
     @media (min-width: 500px) and (max-width: 800px) {  
       #homePageBackgroundImageDivStyled {   
-          background-image: url('/images/default-background_hu3d03a01dcc18bc5be0e67db3d8d209a6_1182514_800x0_resize_q75_box.jpg');
+          background-image: url('/images/site/background-sunset-acadia-1_hu9354422775546116205.jpg');
         }
     }
     @media (min-width: 801px) and (max-width: 1200px) {  
       #homePageBackgroundImageDivStyled {   
-          background-image: url('/images/default-background_hu3d03a01dcc18bc5be0e67db3d8d209a6_1182514_1200x0_resize_q75_box.jpg');
+          background-image: url('/images/site/background-sunset-acadia-1_hu16830788008794927390.jpg');
         }
     }
     @media (min-width: 1201px) and (max-width: 1500px) {  
       #homePageBackgroundImageDivStyled {   
-          background-image: url('/images/default-background_hu3d03a01dcc18bc5be0e67db3d8d209a6_1182514_1500x0_resize_q75_box.jpg');
+          background-image: url('/images/site/background-sunset-acadia-1_hu3997880198620883822.jpg');
         }
     }
     @media (min-width: 1501px) {  
       #homePageBackgroundImageDivStyled {   
-          background-image: url('/images/default-background.jpg');
+          background-image: url('/images/site/background-sunset-acadia-1.jpg');
         }
     }
     </style>
@@ -324,7 +350,7 @@
     class="background container-fluid"
   ></div>
   <div class="container content text-center">
-    <img src="/images/author/bio-photo_snow_hub093b72d847f6c47acf4a2e54a947677_198460_148x148_fit_q75_box.jpg"
+    <img src="/images/author/bio-photo-professional_hu13292538245466744194.jpg"
       class="rounded-circle mx-auto d-block img-fluid"
       alt="Author Image"
     />
@@ -353,7 +379,7 @@
         
           
         
-        <a href="#about" aria-label="Read More - Patrick"><i class="arrow bounce fa fa-chevron-down"></i></a>
+        <a href="#about" class="arrow-center" aria-label="Read More - Patrick"><i class="arrow bounce fa fa-chevron-down"></i></a>
       
     
   </div>
@@ -387,9 +413,9 @@
       <h3 class="p-1">Patrick Herke</h3>
       
       <h5 class="p-1">
-        Systems Engineering Co-op
+        Mechanical Engineering Student
         
-        at <a href="https://www.tranetechnologies.com/" title="Trane Technologies" target="_blank" rel="noopener">Trane Technologies</a>
+        at <a href="https://www.lsu.edu/eng/mie/" title="LSU" target="_blank" rel="noopener">LSU</a>
         
       </h5>
       
@@ -433,70 +459,10 @@
           <div class="col-6 col-lg-4 p-2">
 
     
-    
-    
-    <div class="circular-progress blue">
-    <span class="circular-progress-left">
-        <span
-        class="circular-progress-bar circular-progress-percentage-85"
-        
-        ></span>
-    </span>
-    <span class="circular-progress-right">
-        <span
-        class="circular-progress-bar"
-        
-        ></span>
-    </span>
-    <div class="circular-progress-value">Leadership</div>
-    </div>
-
-</div>
-
-        
-          <div class="col-6 col-lg-4 p-2">
-
-    
-    
-    
-    <div class="circular-progress yellow">
-    <span class="circular-progress-left">
-        <span
-        class="circular-progress-bar circular-progress-percentage-90"
-        
-        ></span>
-    </span>
-    <span class="circular-progress-right">
-        <span
-        class="circular-progress-bar"
-        
-        ></span>
-    </span>
-    <div class="circular-progress-value">Team Work</div>
-    </div>
-
-</div>
-
-        
-          <div class="col-6 col-lg-4 p-2">
-
-    
-    
-    
-    <div class="circular-progress orange">
-    <span class="circular-progress-left">
-        <span
-        class="circular-progress-bar circular-progress-percentage-85"
-        
-        ></span>
-    </span>
-    <span class="circular-progress-right">
-        <span
-        class="circular-progress-bar"
-        
-        ></span>
-    </span>
-    <div class="circular-progress-value">Hard Working</div>
+    <div class="">
+      <a href="https://www.credly.com/badges/000a1669-f0b9-4afa-8273-31b4a20a4725/public_url" target="_blank" rel="noopener noreferrer">
+       <img src="https://images.credly.com/size/340x340/images/14744318-8d6a-49c3-971d-6a4a0f524925/Certification_Designer_Core.png" alt="Alteryx Designer Core Certification" />
+      </a>
     </div>
 
 </div>
@@ -543,7 +509,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/solidworks_hufc2e9a0aecc0a61292be8a307012f5bc_18607_24x24_fit_box_3.png" alt="SolidWorks" />
+          <img class="card-img-xs" src="/images/sections/skills/solidworks_hu5270810730099355717.png" alt="SolidWorks" />
           <h5 class="card-title">SolidWorks</h5>
         
       </div>
@@ -566,7 +532,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/filament_hucdc0c02400fecb504bea853b9c2bdac4_19872_24x24_fit_box_3.png" alt="3D Printing - FDM" />
+          <img class="card-img-xs" src="/images/sections/skills/filament_hu8932790434870519823.png" alt="3D Printing - FDM" />
           <h5 class="card-title">3D Printing - FDM</h5>
         
       </div>
@@ -589,7 +555,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/lathe_hu1c600ccaa81c5fbe46ebb0489ae3dfb3_14937_24x24_fit_box_3.png" alt="Manufacturing Processes" />
+          <img class="card-img-xs" src="/images/sections/skills/lathe_hu16071327542097735107.png" alt="Manufacturing Processes" />
           <h5 class="card-title">Manufacturing Processes</h5>
         
       </div>
@@ -612,7 +578,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/python_hu9199dcd97c934edd25cf84bb53f85094_20637_24x24_fit_box_3.png" alt="Python" />
+          <img class="card-img-xs" src="/images/sections/skills/python_hu601356013275646463.png" alt="Python" />
           <h5 class="card-title">Python</h5>
         
       </div>
@@ -635,7 +601,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/raspberry-pi_hua493d1bf28c1b1a99473e4bb41499633_23727_24x24_fit_box_3.png" alt="Raspberry Pi" />
+          <img class="card-img-xs" src="/images/sections/skills/raspberry-pi_hu10566096491743602193.png" alt="Raspberry Pi" />
           <h5 class="card-title">Raspberry Pi</h5>
         
       </div>
@@ -658,7 +624,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/arduino_hu860aee0791415f75101b5293dbd23132_43804_24x24_fit_box_3.png" alt="Arduino" />
+          <img class="card-img-xs" src="/images/sections/skills/arduino_hu8386436545017498256.png" alt="Arduino" />
           <h5 class="card-title">Arduino</h5>
         
       </div>
@@ -702,7 +668,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/c&#43;&#43;_hue32fe91ddbd83e8e5585833667109ec5_57810_24x24_fit_box_3.png" alt="C&#43;&#43;" />
+          <img class="card-img-xs" src="/images/sections/skills/c&#43;&#43;_hu1614103023828017494.png" alt="C&#43;&#43;" />
           <h5 class="card-title">C&#43;&#43;</h5>
         
       </div>
@@ -725,7 +691,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/matlab_hue8b333850661b37981bc57437394eab2_136266_24x24_fit_box_3.png" alt="Matlab" />
+          <img class="card-img-xs" src="/images/sections/skills/matlab_hu8149022404428530334.png" alt="Matlab" />
           <h5 class="card-title">Matlab</h5>
         
       </div>
@@ -748,7 +714,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/r_hue07ca3a7936ddf427dabf76682072644_32553_24x24_fit_box_3.png" alt="R" />
+          <img class="card-img-xs" src="/images/sections/skills/r_hu1297690908614577533.png" alt="R" />
           <h5 class="card-title">R</h5>
         
       </div>
@@ -792,7 +758,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/tableau_hu06eb6956ee06339c406330e6a204b7a4_15502_24x24_fit_box_3.png" alt="Tableau" />
+          <img class="card-img-xs" src="/images/sections/skills/tableau_hu11193481179769288213.png" alt="Tableau" />
           <h5 class="card-title">Tableau</h5>
         
       </div>
@@ -836,7 +802,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/git_hu6c1226675924c2f2e3476a81b4d03976_10660_24x24_fit_box_3.png" alt="Git" />
+          <img class="card-img-xs" src="/images/sections/skills/git_hu5323486677631463976.png" alt="Git" />
           <h5 class="card-title">Git</h5>
         
       </div>
@@ -859,7 +825,7 @@
             
           
         
-          <img class="card-img-xs" src="/images/sections/skills/spanish_hu20b7faa74314d2d7d4946bc5661cc0b6_15914_24x24_fit_box_3.png" alt="Spanish" />
+          <img class="card-img-xs" src="/images/sections/skills/spanish_hu2091176326210146238.png" alt="Spanish" />
           <h5 class="card-title">Spanish</h5>
         
       </div>
@@ -912,7 +878,7 @@
         <h5>Systems Engineering Co-op</h5>
         <h6><a href=https://www.tranetechnologies.com/ title="Trane Technologies" target="_blank" rel="noopener">Trane Technologies</a></h6>
         
-        <p class="text-muted">Jun 2022 - Present,
+        <p class="text-muted">Jun 2022 - Dec 2022,
             Tyler, TX
         </p>
     </div>
@@ -1311,7 +1277,7 @@
 >
   <div class="card mt-1">
     <div class="card">
-      <a class="card-header" href="javascript:void(0)" >
+      <a class="card-header" href="/posts/projects/anasazi-flute-elderberry/" target="_blank" rel="noopener">
         <div>
           <div class="d-flex">
             
@@ -1338,6 +1304,15 @@
           
           <div class="project-btn-holder">
             
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/projects/anasazi-flute-elderberry/"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
           </div>
         </div>
       </div>
@@ -1352,7 +1327,7 @@
 >
   <div class="card mt-1">
     <div class="card">
-      <a class="card-header" href="javascript:void(0)" >
+      <a class="card-header" href="/posts/projects/filter-press/" target="_blank" rel="noopener">
         <div>
           <div class="d-flex">
             
@@ -1379,6 +1354,15 @@
           
           <div class="project-btn-holder">
             
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/projects/filter-press/"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
           </div>
         </div>
       </div>
@@ -1393,7 +1377,7 @@
 >
   <div class="card mt-1">
     <div class="card">
-      <a class="card-header" href="javascript:void(0)" >
+      <a class="card-header" href="/posts/projects/iontophoresis-device/" target="_blank" rel="noopener">
         <div>
           <div class="d-flex">
             
@@ -1420,6 +1404,15 @@
           
           <div class="project-btn-holder">
             
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/projects/iontophoresis-device/"
+                target="#"
+                >Details</a
+              >
+            </span>
+            
           </div>
         </div>
       </div>
@@ -1434,7 +1427,7 @@
 >
   <div class="card mt-1">
     <div class="card">
-      <a class="card-header" href="javascript:void(0)" >
+      <a class="card-header" href="/posts/projects/blender-teardown/" target="_blank" rel="noopener">
         <div>
           <div class="d-flex">
             
@@ -1460,6 +1453,15 @@
             </div>
           
           <div class="project-btn-holder">
+            
+            <span>
+              <a
+                class="btn btn-outline-info btn-sm"
+                href="/posts/projects/blender-teardown/"
+                target="#"
+                >Details</a
+              >
+            </span>
             
           </div>
         </div>
@@ -1510,47 +1512,6 @@
               aria-label="Star Intro to Robotics Final Project"
               >Star</a
             >
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      
-        <div
-  class="col-sm-12 col-md-6 col-lg-4 p-2 filtr-item"
-  data-category='all, '
->
-  <div class="card mt-1">
-    <div class="card">
-      <a class="card-header" href="javascript:void(0)" >
-        <div>
-          <div class="d-flex">
-            
-            <h5 class="card-title mb-0"></h5>
-          </div>
-          <div class="sub-title">
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </a>
-      <div class="card-body text-justify pt-1 pb-1">
-        <p></p>
-        
-        <div class="project-card-footer">
-          
-            <div class="project-tags-holder">
-              
-                  <span class="badge btn-info">
-                    
-                  </span>
-              
-            </div>
-          
-          <div class="project-btn-holder">
             
           </div>
         </div>
@@ -1746,6 +1707,34 @@
     <div class="row" id="recent-post-cards">
       
         <div class="col-lg-4 col-md-6 pt-2 post-card">
+  <a href="/posts/study-abroad-blog/week-5/" title="Week 5" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/posts/study-abroad-blog/week-5/images/king-cake_first-attempt_20230305T233331.jpg'
+          alt="Card image cap"
+        />
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Week 5</h5>
+        <p class="card-text post-summary"> <p>This week:</p>
+<ul>
+<li>I gave a presentation.</li>
+<li>I went to a market called <a href="https://www.esmadrid.com/en/whats-on/salesas-village">The Festival by SALESAS</a>.</li>
+<li>I tried the matcha latte from Bianchi Kiosko Caffé.</li>
+<li>I made a King Cake for the first time.</li>
+</ul>
+<p>I had a presentation on Thursday. I was a little nervous going into it because it was a very long presentation. We had the whole class, two whole hours, to present on social responsibility as it relates to universities. Aside from a very basic script that we spent maybe 15 or 30 minutes on and then never re-visited, everyone kept their own separate notes. So, it was very difficult to organize the presentation as you couldn&rsquo;t really see the big picture. In the end it went well, but it was more like a collection of different presentations than a single presentation. It didn&rsquo;t flow well.</p></p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">March 6, 2023</span>
+        <a href="/posts/study-abroad-blog/week-5/" title="Read" class="float-right btn btn-outline-info btn-sm">Read</a>
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+        <div class="col-lg-4 col-md-6 pt-2 post-card">
   <a href="/posts/projects/cervical-collar/" title="Cervical Collars" class="post-card-link">
     <div class="card">
       <div class="card-head">
@@ -1755,7 +1744,7 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">Cervical Collars</h5>
-        <p class="card-text post-summary"> Cervical collars are neck braces used for suspected spinal trauma and for post-surgical stabilization of the spine. Current cervical collars allow too much freedom of movement and have limited options for an individualized fit. I am using granular jamming and 3-D printing to resolve those problems. Granular jamming occurs when granular media, like coffee grounds, are placed under vacuum and become hard and rigid; by contrast, when not under vacuum, the bladder can be molded to the patient’s neck.</p>
+        <p class="card-text post-summary"> <p>Cervical collars are neck braces used for suspected spinal trauma and for post-surgical stabilization of the spine. Current cervical collars allow too much freedom of movement and have limited options for an individualized fit. I am using granular jamming and 3-D printing to resolve those problems. Granular jamming occurs when granular media, like coffee grounds, are placed under vacuum and become hard and rigid; by contrast, when not under vacuum, the bladder can be molded to the patient’s neck.</p></p>
       </div>
       <div class="card-footer">
         <span class="float-left">October 1, 2021</span>
@@ -1776,8 +1765,141 @@
       </div>
       <div class="card-body">
         <h5 class="card-title">Filter Press Troubleshooting</h5>
-        <p class="card-text post-summary"> The plates of the filter press were undergoing significant warping resulting in poor filtering, bypass, and leakage. Filter press plates should not need to be regularly replaced, but they were replacing the entire set every 3-5 months for ~$12,000 each time.
-Leaking of filter press. All pictures were taken ~1 week before plate swap. Roughly middle of stack. Shows plates bowing inward towards the center. Most visible by looking at top edge of plate.</p>
+        <p class="card-text post-summary"> <p>The plates of the filter press were undergoing significant warping resulting in poor filtering, bypass, and leakage.  Filter press plates should not need to be regularly replaced, but they were replacing the entire set every 3-5 months for ~$12,000 each time.</p>
+<figure class="grid two">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/3 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/3 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/3 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/filter-press/images/leaking-press_hu8933441773685541663.png 500w
+    
+    
+    
+    '
+    
+      src="/posts/projects/filter-press/images/leaking-press.png"
+    
+    alt="Leaking of filter press. All pictures were taken ~1 week before plate swap."
+  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/3 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/3 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/3 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/filter-press/images/bowing-plates-1_hu12877263329294575029.png 500w
+    
+    
+    
+    '
+    
+      src="/posts/projects/filter-press/images/bowing-plates-1.png"
+    
+    alt="Roughly middle of stack. Shows plates bowing inward towards the center. Most visible by looking at top edge of plate."
+  >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <img
+    sizes="(min-width: 1824px) calc(1/3 * (0.65 * (100vw - 17px) - 92px) - 3.0s9px), (min-width: 1024px) calc(1/3 * (0.6 * (100vw - 17px) - 93px) - 2.59px), (min-width: 36em) calc(1/3 * (1.0 * (100vw - 17px) - 31px) - 2.59px), 100vw"
+    srcset='
+    
+      /posts/projects/filter-press/images/cake-material_hu5242050734358685731.png 500w
+    
+    
+    
+    '
+    
+      src="/posts/projects/filter-press/images/cake-material.png"
+    
+    alt="Cake material from filter press with high liquid content."
+  >
+
+
+    <figcaption>
+      <p>Shows leaking of the filter press and associated bowing of the plates. Consistency of cake material is also shown. All pictures were taken ~1 week before plate swap.</p></p>
       </div>
       <div class="card-footer">
         <span class="float-left">August 1, 2021</span>
@@ -1788,29 +1910,9 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
 </div>
 
       
-        <div class="col-lg-4 col-md-6 pt-2 post-card">
-  <a href="/posts/projects/iontophoresis-device/" title="Designing an Iontophoresis Device" class="post-card-link">
-    <div class="card">
-      <div class="card-head">
-        <img class="card-img-top" src='/posts/projects/iontophoresis-device/images/full-setup.jpg'
-          alt="Card image cap"
-        />
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Designing an Iontophoresis Device</h5>
-        <p class="card-text post-summary"> One of the accepted treatments for hyperhidrosis (excessive sweating) is iontophoresis. Iontophoresis involves running a small current through the hands, feet, or armpits of the patient. Some people set the current whereas others set the voltage for a session. I wanted to see if these control methods were equivalent. Safety concerns around the body and electricity are obviously very important and complicated. RA Fischer, a manufacturer of an FDA approved device, has max settings of 30mA and 58V.</p>
-      </div>
-      <div class="card-footer">
-        <span class="float-left">August 1, 2020</span>
-        <a href="/posts/projects/iontophoresis-device/" title="Read" class="float-right btn btn-outline-info btn-sm">Read</a>
-      </div>
-    </div>
-  </a>
-</div>
-
-      
     </div>
   </div>
+  
 </div>
 
           </div>
@@ -1839,7 +1941,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
 
 
   
-    
+      
   
 
 
@@ -1899,7 +2001,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#about">About</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#about">About</a>
                 </li>
               
               
@@ -1908,7 +2010,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#skills">Skills</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#skills">Skills</a>
                 </li>
               
               
@@ -1917,7 +2019,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#experiences">Experiences</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#experiences">Experiences</a>
                 </li>
               
               
@@ -1926,7 +2028,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#education">Education</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#education">Education</a>
                 </li>
               
               
@@ -1935,7 +2037,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#projects">Projects</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#projects">Projects</a>
                 </li>
               
               
@@ -1944,7 +2046,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#publications">Publications</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#publications">Publications</a>
                 </li>
               
               
@@ -1953,7 +2055,7 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
                   
                 
                 <li class="nav-item">
-                  <a class="smooth-scroll" href="https://patrick-herke.com#recent-posts">Recent Posts</a>
+                  <a class="smooth-scroll" href="http://localhost:1313/#recent-posts">Recent Posts</a>
                 </li>
               
               
@@ -1993,22 +2095,6 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
         
         
         
-          
-          <div class="col-md-4 col-sm-12">
-            <p>Stay up to date with email notification</p>
-            
-              <form method='post' action='https://blogtrottr.com'>
-              <div class="form-group">
-              <input type='email' class="form-control" name='btr_email' placeholder="Enter email"/><br />
-              <input type='hidden' name='btr_url' value='https://patrick-herke.comindex.xml' />
-              <input type='hidden' name='schedule_type' value='1' />
-              <small id="emailHelp" class="form-text text-muted">By entering your email address, you agree to receive the newsletter of this website.</small>
-              <button type="submit" class="btn btn-info"> Submit </button>
-              </div>
-              </form>
-            
-          </div>
-        
       </div>
     </div>
     
@@ -2017,12 +2103,12 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
     <div class="container">
       <div class="row text-left">
         <div class="col-md-4">
-          <a id="theme" href="https://github.com/hossainemruz/toha" target="_blank" rel="noopener">
-            <img src="/images/theme-logo_hu8376fd15465fef26ffe66b6bcf0ca686_13669_32x0_resize_box_3.png" alt="Toha Theme Logo">
+          <a id="theme" href="https://github.com/hugo-toha/toha" target="_blank" rel="noopener">
+            <img src="/images/theme-logo_hu16779671404603505019.png" alt="Toha Theme Logo">
             Toha
           </a>
         </div>
-        <div class="col-md-4 text-center">© 2020 Copyright.</div>
+        <div class="col-md-4 text-center">© 2022 Copyright.</div>
         <div class="col-md-4 text-right">
           <a id="hugo" href="https://gohugo.io/" target="_blank" rel="noopener">Powered by
           <img
@@ -2045,6 +2131,11 @@ Leaking of filter press. All pictures were taken ~1 week before plate swap. Roug
 <script type="text/javascript" src="/js/navbar.js"></script>
 <script type="text/javascript" src="/js/plyr.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script type="text/javascript" src="/js/darkreader.js"></script>
+<script type="text/javascript" src="/js/darkmode-darkreader.js"></script>
 
 
 
